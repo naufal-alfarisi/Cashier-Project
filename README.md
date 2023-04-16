@@ -17,6 +17,10 @@ They have to be able to add, edit, delete, reset, and check out their order from
 9. main menu function: open a list of task user can choose to do
 10. welcome function: welcoming page where user can input their ID which upon submission timestamp collected automatically
 
+every time an item inputted the system will check if there is already item with similar name in the order, if so it would offer to change the quantity instead.
+the system will also check if the item inputted manually is actually in the catalog, if so the price will be added automatically.
+after having the price and amount the system will check for discount, if there's any it would be calculated automatically.
+
 # Code Flow
 1. run welcome() where user can input their id or 'q' to exit the system
 
@@ -78,3 +82,10 @@ They have to be able to add, edit, delete, reset, and check out their order from
 8. if they select the last, it will exit the system
 
 ![image](https://user-images.githubusercontent.com/128882248/232321660-aaa2ec0d-e4e3-4a06-b9ff-4905f96d976e.png)
+
+# Conclusion
+This is my first project using pyhton, any feedback will be appreciated.
+There some improvement I would like to make in the future, for example:
+1. having the discount in a dictionary, so it can be easily modified if needed
+2. create function for each item, price, discount check as well as to calculate the total and after discount price
+3. overall make the code shorter, I still copy-paste a lot in this so there are several repetitions
